@@ -28,6 +28,7 @@ with
             customer_orders.most_recent_order_date,
             coalesce(customer_orders.number_of_orders, 0) as number_of_orders,
             current_timestamp() as when_processed_tz,
+            current_timestamp() as when_processed_tz_1
 
         from customers
 
